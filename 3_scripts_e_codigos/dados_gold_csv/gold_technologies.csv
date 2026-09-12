@@ -1,0 +1,52 @@
+ano,categoria,tecnologia,usuarios,base_valida,pct
+2023,bi,Looker Studio,653,3772,17.3
+2024,bi,Looker Studio,603,3619,16.7
+2025,bi,Looker Studio,328,2106,15.6
+2023,bi,Metabase,324,3772,8.6
+2024,bi,Metabase,318,3619,8.8
+2025,bi,Metabase,177,2106,8.4
+2023,bi,Power BI,2154,3772,57.1
+2024,bi,Power BI,1996,3619,55.2
+2025,bi,Power BI,1243,2106,59.0
+2023,bi,Qlik,194,3772,5.1
+2024,bi,Qlik,178,3619,4.9
+2025,bi,Qlik,91,2106,4.3
+2023,bi,Tableau,713,3772,18.9
+2024,bi,Tableau,687,3619,19.0
+2025,bi,Tableau,287,2106,13.6
+2019,cloud,AWS,412,1765,23.3
+2021,cloud,AWS,786,1855,42.4
+2022,cloud,AWS,1153,2981,38.7
+2023,cloud,AWS,1106,3613,30.6
+2024,cloud,AWS,1584,3589,44.1
+2025,cloud,AWS,1012,2096,48.3
+2019,cloud,Azure,191,1765,10.8
+2021,cloud,Azure,498,1855,26.8
+2022,cloud,Azure,546,2981,18.3
+2023,cloud,Azure,1529,3613,42.3
+2024,cloud,Azure,1108,3589,30.9
+2025,cloud,Azure,730,2096,34.8
+2019,cloud,GCP,225,1765,12.7
+2021,cloud,GCP,448,1855,24.2
+2022,cloud,GCP,721,2981,24.2
+2023,cloud,GCP,1141,3613,31.6
+2024,cloud,GCP,1050,3589,29.3
+2025,cloud,GCP,647,2096,30.9
+2019,linguagem,Python,784,1765,44.4
+2021,linguagem,Python,1346,1857,72.5
+2022,linguagem,Python,2089,2981,70.1
+2023,linguagem,Python,2825,3772,74.9
+2024,linguagem,Python,2935,3589,81.8
+2025,linguagem,Python,1929,2096,92.0
+2019,linguagem,R,318,1765,18.0
+2021,linguagem,R,306,1857,16.5
+2022,linguagem,R,385,2981,12.9
+2023,linguagem,R,408,3772,10.8
+2024,linguagem,R,352,3589,9.8
+2025,linguagem,R,328,2096,15.6
+2019,linguagem,SQL,714,1765,40.5
+2021,linguagem,SQL,1487,1857,80.1
+2022,linguagem,SQL,2367,2981,79.4
+2023,linguagem,SQL,3156,3772,83.7
+2024,linguagem,SQL,3146,3589,87.7
+2025,linguagem,SQL,1764,2096,84.2

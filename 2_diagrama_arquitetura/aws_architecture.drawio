@@ -1,0 +1,155 @@
+<mxfile host="Electron" agent="TechChallenge-Fase3">
+  <diagram id="arquitetura-aws-sod" name="Arquitetura AWS — State of Data">
+    <mxGraphModel dx="2662" dy="1077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#232F3E;" value="Arquitetura da Solução — Tech Challenge Fase 3 · State of Data Brasil (Data Hackers/Bain)" vertex="1">
+          <mxGeometry height="32" width="1580" x="40" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;" value="Padrão Medallion (Bronze / Silver / Gold) no AWS Academy Lab · S3 + Glue + Athena · Grupo: Efraim Oliveira · Érica Tarsis · Ricardo Moraes · Rodrigo Bernardino · Thiago Galvão" vertex="1">
+          <mxGeometry height="22" width="1580" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=13;fontStyle=1;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" value="AWS Academy Lab — Nuvem AWS" vertex="1">
+          <mxGeometry height="770" width="1070" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="&lt;b&gt;1 · FONTE&lt;/b&gt;&lt;br&gt;Kaggle — Data Hackers/Bain&lt;br&gt;6 CSVs: 2019 a 2025/26&lt;br&gt;&lt;i&gt;base pública anonimizada&lt;/i&gt;" vertex="1">
+          <mxGeometry height="105" width="195" x="50" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;dashed=1;fontSize=9;fontColor=#555555;" value="Núcleo obrigatório: 2023 · 2024 · 2025/26&lt;br&gt;Contexto histórico: 2019 · 2021 · 2022" vertex="1">
+          <mxGeometry height="46" width="195" x="50" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="&lt;b&gt;2 · S3 — BRONZE&lt;/b&gt;&lt;br&gt;bronze/ano=YYYY/&lt;br&gt;CSV bruto e imutável" vertex="1">
+          <mxGeometry height="78" width="78" x="360" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="&lt;b&gt;3 · AWS GLUE JOB 1&lt;/b&gt;&lt;br&gt;PySpark: de-para de colunas,&lt;br&gt;harmonização, salário (PM)" vertex="1">
+          <mxGeometry height="78" width="78" x="560" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="&lt;b&gt;4 · S3 — SILVER&lt;/b&gt;&lt;br&gt;Parquet · ano=YYYY&lt;br&gt;silver_core + serie_longa" vertex="1">
+          <mxGeometry height="78" width="78" x="760" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="&lt;b&gt;5 · AWS GLUE JOB 2&lt;/b&gt;&lt;br&gt;PySpark:&lt;br&gt;agregações temáticas" vertex="1">
+          <mxGeometry height="78" width="78" x="960" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="&lt;b&gt;6 · S3 — GOLD&lt;/b&gt;&lt;br&gt;21 tabelas analíticas&lt;br&gt;Parquet + CSV" vertex="1">
+          <mxGeometry height="78" width="78" x="1170" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" value="&lt;b&gt;IAM — LabRole&lt;/b&gt;&lt;br&gt;menor privilégio&lt;br&gt;(restrições do Lab)" vertex="1">
+          <mxGeometry height="78" width="78" x="441" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="&lt;b&gt;7 · GLUE DATA CATALOG&lt;/b&gt;&lt;br&gt;db state_of_data&lt;br&gt;tabelas silver e gold" vertex="1">
+          <mxGeometry height="78" width="78" x="679" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.athena;" value="&lt;b&gt;8 · AMAZON ATHENA&lt;/b&gt;&lt;br&gt;consultas SQL&lt;br&gt;(notebook 04)" vertex="1">
+          <mxGeometry height="78" width="78" x="932" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="&lt;b&gt;9 · GLUE NOTEBOOK&lt;/b&gt;&lt;br&gt;Spark interativo&lt;br&gt;(notebooks 02–05)" vertex="1">
+          <mxGeometry height="78" width="78" x="1270" y="433" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="&lt;b&gt;10 · GRÁFICOS DAS ANÁLISES&lt;/b&gt;&lt;br&gt;Matplotlib sobre agregados Gold — 15 PNGs com fonte, edição, n" vertex="1">
+          <mxGeometry height="58" width="330" x="960" y="702" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;spacing=8;fontSize=10;" value="&lt;b&gt;Controles de segurança e conformidade (Bloco Regulatório 8.1)&lt;/b&gt;&lt;br&gt;• SSE-S3 (criptografia em repouso) nas 3 camadas &amp;nbsp;• Block Public Access ativo nos buckets &amp;nbsp;• IAM LabRole — menor privilégio&lt;br&gt;• Segregação lógica bronze/silver/gold &amp;nbsp;• Particionamento ano=YYYY &amp;nbsp;• LGPD: dados anonimizados na origem, uso exclusivamente agregado" vertex="1">
+          <mxGeometry height="68" width="690" x="320" y="791" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="&lt;b&gt;11 · MATERIAL EXECUTIVO&lt;/b&gt;&lt;br&gt;PPT/PDF · DataViz + Storytelling&lt;br&gt;(Entrega 1 — diagrama embutido)" vertex="1">
+          <mxGeometry height="96" width="200" x="1408" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;align=left;spacing=8;fontSize=10;" value="&lt;b&gt;Legenda&lt;/b&gt;&lt;br&gt;— seta cheia: fluxo de dados &amp;nbsp;&amp;nbsp; - - cinza: catalogação/metadados &amp;nbsp;&amp;nbsp; - - vermelha: permissões IAM (LabRole)&lt;br&gt;Numeração 1–11 = etapas do fluxo (template 11.2 das diretrizes do projeto)" vertex="1">
+          <mxGeometry height="62" width="560" x="40" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n7" value="upload manual">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" edge="1" parent="1" source="n7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n8" value="CSV">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n9" value="Parquet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" edge="1" parent="1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" edge="1" parent="1" source="n10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" target="n11" value="Parquet + CSV">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" edge="1" parent="1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#7F7F7F;dashed=1;fontSize=10;fontColor=#7F7F7F;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="n13" value="crawler / DDL">
+          <mxGeometry relative="1" x="0.2593" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n26" edge="1" parent="1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#7F7F7F;dashed=1;fontSize=10;fontColor=#7F7F7F;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" target="n13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="251.02" />
+              <mxPoint x="1100" y="350" />
+              <mxPoint x="910" y="350" />
+              <mxPoint x="910" y="449.49" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n27" edge="1" parent="1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n14" value="metadados">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" edge="1" parent="1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n14" value="SQL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="270.47" />
+              <mxPoint x="1150" y="380" />
+              <mxPoint x="990.53" y="380" />
+            </Array>
+            <mxPoint x="990" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n29" edge="1" parent="1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" target="n15" value="Spark">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1309" y="231.5" />
+            </Array>
+            <mxPoint x="1260" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n30" edge="1" parent="1" source="n14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="n16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="n16" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1207.48" y="491.52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n32" edge="1" parent="1" source="n16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#232F3E;fontSize=10;fontColor=#232F3E;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n18" value="PNG + insights">
+          <mxGeometry relative="1" x="0.5338" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n33" edge="1" parent="1" source="n12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=1.5;strokeColor=#C7131F;dashed=1;fontSize=10;fontColor=#C7131F;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="n8" value="LabRole">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="430" />
+              <mxPoint x="480" y="248.51" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n34" edge="1" parent="1" source="n12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=1.5;strokeColor=#C7131F;dashed=1;fontSize=10;fontColor=#C7131F;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="n10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="499.48" y="370.04" />
+              <mxPoint x="880" y="370.04" />
+              <mxPoint x="880" y="248.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n35" edge="1" parent="1" source="n12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=1.5;strokeColor=#C7131F;dashed=1;fontSize=10;fontColor=#C7131F;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;" target="n14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="488.48" />
+              <mxPoint x="570" y="578.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

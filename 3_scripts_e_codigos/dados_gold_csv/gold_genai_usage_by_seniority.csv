@@ -1,0 +1,51 @@
+ano,nivel,modalidade,usuarios,base_valida,pct
+2023,Júnior,Empresa paga,44,1020,4.3
+2023,Pleno,Empresa paga,80,1359,5.9
+2023,Sênior,Empresa paga,116,1393,8.3
+2023,Júnior,Não usa GenAI,202,1020,19.8
+2023,Pleno,Não usa GenAI,254,1359,18.7
+2023,Sênior,Não usa GenAI,288,1393,20.7
+2023,Júnior,Paga do próprio bolso,38,1020,3.7
+2023,Pleno,Paga do próprio bolso,87,1359,6.4
+2023,Sênior,Paga do próprio bolso,136,1393,9.8
+2023,Júnior,Usa Copilot,81,1020,7.9
+2023,Pleno,Usa Copilot,154,1359,11.3
+2023,Sênior,Usa Copilot,209,1393,15.0
+2023,Júnior,Usa soluções gratuitas,711,1020,69.7
+2023,Pleno,Usa soluções gratuitas,900,1359,66.2
+2023,Sênior,Usa soluções gratuitas,790,1393,56.7
+2024,Júnior,Empresa paga,95,775,12.3
+2024,Pleno,Empresa paga,234,1320,17.7
+2024,Sênior,Empresa paga,368,1524,24.1
+2024,Júnior,Não usa GenAI,46,775,5.9
+2024,Pleno,Não usa GenAI,91,1320,6.9
+2024,Sênior,Não usa GenAI,100,1524,6.6
+2024,Júnior,Paga do próprio bolso,92,775,11.9
+2024,Pleno,Paga do próprio bolso,192,1320,14.5
+2024,Sênior,Paga do próprio bolso,278,1524,18.2
+2024,Júnior,Usa Copilot,136,775,17.5
+2024,Pleno,Usa Copilot,312,1320,23.6
+2024,Sênior,Usa Copilot,410,1524,26.9
+2024,Júnior,Usa soluções gratuitas,508,775,65.5
+2024,Pleno,Usa soluções gratuitas,725,1320,54.9
+2024,Sênior,Usa soluções gratuitas,711,1524,46.7
+2025,Especialista/Staff+,Empresa paga,163,306,53.3
+2025,Júnior,Empresa paga,118,390,30.3
+2025,Pleno,Empresa paga,272,666,40.8
+2025,Sênior,Empresa paga,339,744,45.6
+2025,Especialista/Staff+,Não usa GenAI,5,306,1.6
+2025,Júnior,Não usa GenAI,11,390,2.8
+2025,Pleno,Não usa GenAI,14,666,2.1
+2025,Sênior,Não usa GenAI,14,744,1.9
+2025,Especialista/Staff+,Paga do próprio bolso,94,306,30.7
+2025,Júnior,Paga do próprio bolso,98,390,25.1
+2025,Pleno,Paga do próprio bolso,169,666,25.4
+2025,Sênior,Paga do próprio bolso,206,744,27.7
+2025,Especialista/Staff+,Usa Copilot,116,306,37.9
+2025,Júnior,Usa Copilot,96,390,24.6
+2025,Pleno,Usa Copilot,179,666,26.9
+2025,Sênior,Usa Copilot,237,744,31.9
+2025,Especialista/Staff+,Usa soluções gratuitas,50,306,16.3
+2025,Júnior,Usa soluções gratuitas,158,390,40.5
+2025,Pleno,Usa soluções gratuitas,221,666,33.2
+2025,Sênior,Usa soluções gratuitas,214,744,28.8

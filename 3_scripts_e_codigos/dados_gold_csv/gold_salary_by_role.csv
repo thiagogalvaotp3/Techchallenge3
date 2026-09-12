@@ -1,0 +1,38 @@
+ano,cargo_grupo,n,salario_medio_pm,salario_mediano_pm
+2023,Analytics Engineer,139,11040.0,10001.0
+2023,Ciência de Dados,687,10583.0,10001.0
+2023,DBA,20,11351.0,10001.0
+2023,ML/AI Engineer,75,12567.0,10001.0
+2023,Engenharia/Arquitetura de Dados,684,11659.0,10001.0
+2023,Professor/Pesquisador,28,10983.0,10001.0
+2023,Produto (DPM/PM),81,11346.0,10001.0
+2023,Estatística/Economia,26,10462.0,8501.0
+2023,Eng. de Software,105,9824.0,7001.0
+2023,Análise de Negócios,195,7165.0,7001.0
+2023,Análise de Dados,907,7149.0,7001.0
+2023,Business Intelligence,506,6254.0,5001.0
+2023,Outros,404,6077.0,3501.0
+2024,ML/AI Engineer,103,15840.0,14001.0
+2024,Analytics Engineer,228,10873.0,10001.0
+2024,Produto (DPM/PM),80,11932.0,10001.0
+2024,Engenharia/Arquitetura de Dados,661,13094.0,10001.0
+2024,Ciência de Dados,687,11866.0,10001.0
+2024,Eng. de Software,122,9275.0,7001.0
+2024,Estatística/Economia,17,7648.0,7001.0
+2024,Análise de Dados,957,8008.0,7001.0
+2024,Professor/Pesquisador,21,7691.0,7001.0
+2024,Análise de Negócios,184,8911.0,7001.0
+2024,Business Intelligence,396,6512.0,5001.0
+2024,Outros,362,6868.0,5001.0
+2025,ML/AI Engineer,106,19081.0,18001.0
+2025,Produto (DPM/PM),33,18137.0,14001.0
+2025,Engenharia/Arquitetura de Dados,430,14540.0,14001.0
+2025,Analytics Engineer,135,13312.0,14001.0
+2025,Professor/Pesquisador,16,12126.0,10001.0
+2025,Eng. de Software,106,13128.0,10001.0
+2025,Ciência de Dados,424,12930.0,10001.0
+2025,Business Intelligence,215,7561.0,7001.0
+2025,Análise de Negócios,141,8891.0,7001.0
+2025,Análise de Dados,599,8790.0,7001.0
+2025,Estatística/Economia,9,8667.0,5001.0
+2025,Outros,287,7102.0,5001.0

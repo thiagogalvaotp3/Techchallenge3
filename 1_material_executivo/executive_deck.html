@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Material Executivo — Tech Challenge Fase 3 | State of Data Brasil</title>
+<style>
+  @page { size: A4 landscape; margin: 10mm; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: Aptos, Calibri, "Segoe UI", Arial, sans-serif; color: #1a1a1a; margin: 0; }
+  .slide { page-break-after: always; padding: 12mm 14mm 18mm 14mm; }
+  .slide:last-of-type { page-break-after: auto; }
+  h1.capa { font-size: 30pt; color: #1F3864; margin: 0 0 8pt 0; line-height: 1.18; }
+  h2.sub  { font-size: 14pt; color: #444; font-weight: 400; margin: 0 0 24pt 0; line-height: 1.35; }
+  h1.kicker { font-size: 20pt; color: #1F3864; margin: 0 0 10pt 0; line-height: 1.2; }
+  .eyebrow { font-size: 9pt; color: #C4610A; font-weight: 700; letter-spacing: .09em;
+             text-transform: uppercase; margin: 0 0 5pt 0; }
+  ul { margin: 6pt 0 0 0; padding-left: 15pt; }
+  li { font-size: 11pt; margin-bottom: 5pt; line-height: 1.35; }
+  .big { font-size: 34pt; font-weight: 700; color: #1F3864; line-height: 1; margin: 0 0 4pt 0; }
+  .biglegenda { font-size: 9.5pt; color: #555; line-height: 1.35; margin: 0 0 10pt 0; }
+  .layout { width: 100%; border-collapse: collapse; }
+  .layout td { vertical-align: top; padding: 0; border: 0; }
+  .layout td.esq { padding-right: 12pt; }
+  img.graf { border: 1px solid #dcdcdc; }
+  .figleg { font-size: 8.5pt; color: #666; margin: 4pt 0 0 0; font-style: italic; }
+  .sowhat { background: #FFF3E0; border-left: 4px solid #E8710A; padding: 8pt 11pt; margin-top: 10pt;
+            page-break-inside: avoid; }
+  .sowhat b { color: #A34D00; display: block; font-size: 8.5pt; text-transform: uppercase;
+              letter-spacing: .06em; margin-bottom: 3pt; }
+  .sowhat span { font-size: 10.5pt; line-height: 1.35; }
+  table.dados { border-collapse: collapse; width: 100%; margin-top: 8pt; page-break-inside: avoid; }
+  table.dados th { background: #1F3864; color: #ffffff; font-size: 9.5pt; text-align: left; padding: 6pt 8pt; }
+  table.dados td { font-size: 10pt; padding: 5pt 8pt; border-bottom: 1px solid #dfdfdf; vertical-align: top; }
+  table.dados th.c, table.dados td.c { text-align: center; }   /* colunas curtas: prioridade, horizonte */
+  table.dados tr:nth-child(even) td { background: #F2F2F2; }
+  .rodape { margin-top: 12pt; padding-top: 5pt; border-top: 1px solid #e2e2e2;
+            font-size: 8pt; color: #777; }
+  .alta { color: #B02A20; font-weight: 700; }
+  .media { color: #9A6B00; font-weight: 700; }
+  .nota { font-size: 9pt; color: #666; font-style: italic; margin-top: 8pt; line-height: 1.35; }
+  .destaque { background: #F2F2F2; border-left: 4px solid #1F3864; padding: 10pt 13pt;
+              font-size: 12.5pt; line-height: 1.4; page-break-inside: avoid; }
+  .roteiro { padding: 12mm 14mm; }
+  .roteiro h2 { color: #1F3864; font-size: 15pt; margin-bottom: 10pt; }
+  .roteiro p { font-size: 10pt; margin: 3pt 0 9pt 0; line-height: 1.4; }
+  .roteiro b { color: #1F3864; }
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · CAPA ============ -->
+<div class="slide" style="padding-top:38mm;">
+  <p class="eyebrow">POSTECH DTAT · Tech Challenge — Fase 3 · Material Executivo</p>
+  <h1 class="capa">O Mercado Brasileiro de Dados:<br>o que 22.686 profissionais revelam sobre<br>contratar, capacitar e investir em IA</h1>
+  <h2 class="sub">Big Data &amp; Analytics na AWS · pesquisa State of Data Brasil (Data Hackers &amp; Bain &amp; Company)</h2>
+  <table class="layout" style="width:auto;">
+    <tr><td style="padding:3pt 26pt 3pt 0;"><b>Grupo</b></td>
+        <td style="padding:3pt 0;">Efraim Oliveira · Érica Tarsis · Ricardo Moraes · Rodrigo Bernardino · Thiago Galvão</td></tr>
+    <tr><td style="padding:3pt 26pt 3pt 0;"><b>Cliente (simulado)</b></td>
+        <td style="padding:3pt 0;">Instituição financeira de grande porte — expansão de Dados, Analytics e IA</td></tr>
+    <tr><td style="padding:3pt 26pt 3pt 0;"><b>Data</b></td>
+        <td style="padding:3pt 0;">Agosto de 2026</td></tr>
+  </table>
+</div>
+
+<!-- ============ 2 · AGENDA + SÍNTESE ============ -->
+<div class="slide">
+  <p class="eyebrow">Agenda e síntese executiva</p>
+  <h1 class="kicker">Seis evidências que definem três decisões</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="36%">
+        <ul>
+          <li><b>1.</b> Contexto e pergunta norteadora</li>
+          <li><b>2.</b> Metodologia e arquitetura da solução</li>
+          <li><b>3.</b> Mercado: perfis, senioridade e remuneração</li>
+          <li><b>4.</b> Diversidade, tecnologias e adoção de IA</li>
+          <li><b>5.</b> Regiões e modelos de trabalho</li>
+          <li><b>6.</b> Recomendações, riscos e próximos passos</li>
+        </ul>
+        <p class="nota">Fonte primária única: seis edições da pesquisa, processadas em pipeline próprio na AWS. Nenhum número deste material vem de fonte externa.</p>
+      </td>
+      <td width="64%">
+        <table class="dados">
+          <tr><th width="50%">Evidência (2025/26)</th><th>Decisão recomendada</th></tr>
+          <tr><td>Python 92,0% e SQL 84,2% de adoção</td><td>Trilha-base obrigatória Python + SQL</td></tr>
+          <tr><td>AWS lidera a nuvem com 48,3%</td><td>Priorizar stack e certificações AWS</td></tr>
+          <tr><td>IA como prioridade: 36,2% → 60,6%</td><td>Acelerar GenAI com governança</td></tr>
+          <tr><td>Empresa paga GenAI: 6,4% → 42,4%</td><td>Licenciamento corporativo + política de uso</td></tr>
+          <tr><td>Gap salarial de −28,6% no nível Sênior</td><td>Metas de diversidade na promoção</td></tr>
+          <tr><td>Apenas 1,9% desejam 100% presencial</td><td>Flexibilidade declarada como política</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · n = 3.495 respondentes</div>
+</div>
+
+<!-- ============ 3 · CONTEXTO ============ -->
+<div class="slide">
+  <p class="eyebrow">Contexto de negócio</p>
+  <h1 class="kicker">Expandir Dados e IA exige ler o mercado antes de contratar</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="60%">
+        <ul>
+          <li><b>Cliente:</b> instituição financeira de grande porte, decidida a expandir Dados, Analytics e IA.</li>
+          <li><b>Dor:</b> definir contratação, capacitação e investimento sem um retrato confiável do mercado.</li>
+          <li><b>Risco de errar:</b> bandas salariais desalinhadas, disputa por perfis escassos e investimento em IA sobre base de dados não confiável.</li>
+          <li><b>Nossa entrega:</b> pipeline analítico completo na AWS somado à leitura estratégica das seis últimas edições da pesquisa de referência do setor.</li>
+        </ul>
+      </td>
+      <td width="40%">
+        <p class="big">3</p>
+        <p class="biglegenda">decisões em jogo: <b>quem contratar</b>, <b>o que capacitar</b> e <b>onde investir</b></p>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Cada decisão deste material é rastreável a um número da pesquisa — nenhuma recomendação é opinião.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edições 2019 a 2025/26</div>
+</div>
+
+<!-- ============ 4 · PERGUNTA NORTEADORA ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta norteadora</p>
+  <h1 class="kicker">Uma pergunta, sete desdobramentos</h1>
+  <div class="destaque">
+    Como a evolução do mercado brasileiro de dados (perfil profissional, senioridade, remuneração, diversidade,
+    tecnologias e adoção de IA), observada nas três últimas edições da pesquisa State of Data Brasil,
+    <b>deve orientar as estratégias de contratação, capacitação e investimento</b> de uma instituição
+    financeira de grande porte?
+  </div>
+  <table class="layout" style="margin-top:12pt;">
+    <tr>
+      <td class="esq" width="50%">
+        <ul>
+          <li>1. Como está estruturado o mercado de Dados? <i>(slide 7)</i></li>
+          <li>2. Quais perfis são mais valorizados? <i>(slide 8)</i></li>
+          <li>3. Qual o cenário de diversidade de gênero? <i>(slide 9)</i></li>
+          <li>4. Quais tecnologias têm maior adoção? <i>(slide 10)</i></li>
+        </ul>
+      </td>
+      <td width="50%">
+        <ul>
+          <li>5. Qual o índice de adoção de IA e seu impacto? <i>(slide 11)</i></li>
+          <li>6. Há diferenças por região, senioridade e modelo de trabalho? <i>(slides 8, 9 e 12)</i></li>
+          <li>7. Quais oportunidades e desafios para quem investe? <i>(slide 13)</i></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">As sete perguntas obrigatórias do enunciado são respondidas uma a uma nos blocos analíticos (slides 7 a 13)</div>
+</div>
+
+<!-- ============ 5 · METODOLOGIA ============ -->
+<div class="slide">
+  <p class="eyebrow">Metodologia e fontes</p>
+  <h1 class="kicker">Seis edições, 22.686 respostas, um pipeline auditável</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G01_respondents_by_edition.png" width="600" alt="Respondentes por edição da pesquisa">
+        <p class="figleg">Figura 1 — Respondentes por edição (cinza: contexto histórico; azul: núcleo obrigatório).</p>
+      </td>
+      <td width="42%">
+        <ul>
+          <li><b>Núcleo obrigatório:</b> 2023, 2024 e 2025/26 — 14.005 respostas.</li>
+          <li><b>Contexto histórico:</b> 2019, 2021 e 2022, usados apenas em séries longas.</li>
+          <li><b>Comparação só após harmonização:</b> 69 colunas por edição em de-para versionado.</li>
+          <li><b>Zero registros descartados</b> entre origem e análise (reconciliação 1:1).</li>
+          <li>Percentuais de múltipla escolha calculados sobre <b>respondentes válidos de cada questão</b>.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Por que confiar nos números</b>
+          <span>Premissas versionadas (P1–P8) e pipeline reexecutável: qualquer terceiro chega aos mesmos resultados.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edições 2019–2025/26 · n total = 22.686</div>
+</div>
+
+<!-- ============ 6 · ARQUITETURA ============ -->
+<div class="slide">
+  <p class="eyebrow">Arquitetura da solução AWS</p>
+  <h1 class="kicker">Do CSV bruto à decisão: pipeline Medallion na AWS</h1>
+  <p style="text-align:center; margin:6pt 0 0 0;">
+    <img class="graf" src="aws_architecture.png" width="880" alt="Arquitetura AWS: S3 Bronze, Silver e Gold, Glue Jobs, Data Catalog e Athena">
+  </p>
+  <p class="figleg" style="text-align:center;">Figura 2 — Arquitetura da solução, desenhada em Draw.io e executada no AWS Academy Lab.</p>
+  <div class="sowhat">
+    <b>Implicação para o cliente</b>
+    <span>Esta arquitetura é o <b>blueprint mínimo</b> da plataforma recomendada: S3 (Bronze/Silver/Gold), Glue Jobs em PySpark, Glue Data Catalog e Athena — com criptografia SSE-S3, Block Public Access e menor privilégio desde o primeiro dia.</span>
+  </div>
+  <div class="rodape">Camada Gold com 21 tabelas analíticas · particionamento por ano · consultas SQL serverless no Athena</div>
+</div>
+
+<!-- ============ 7 · Q1 MERCADO ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 1 — Estrutura do mercado</p>
+  <h1 class="kicker">Mercado consolidado em quatro famílias — e escasso no topo</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G02_roles_2025.png" width="600" alt="Participação por grupo de cargo em 2025/26">
+        <p class="figleg">Figura 3 — Participação por grupo de cargo, contribuidores individuais (top 9).</p>
+      </td>
+      <td width="42%">
+        <ul>
+          <li><b>Quatro famílias concentram 66,8%:</b> Análise de Dados (24,0%), Engenharia/Arquitetura (17,2%), Ciência de Dados (17,0%) e BI (8,6%).</li>
+          <li><b>Perfis emergentes:</b> Analytics Engineer (5,4%) e ML/AI Engineer (4,2%) — inexpressivos nas primeiras edições.</li>
+          <li>A base Júnior encolhe e o topo se sofistica: a edição 2025/26 criou a categoria Especialista/Staff+.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Disputa dura por sêniores. Formar internamente custa menos do que competir no mercado aberto.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · n = 2.501 com cargo declarado</div>
+</div>
+
+<!-- ============ 8 · Q2 REMUNERAÇÃO ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 2 — Perfis valorizados e remuneração</p>
+  <h1 class="kicker">Cada degrau de senioridade quase dobra a remuneração</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G04_salary_by_seniority.png" width="600" alt="Salário mediano estimado por senioridade e edição">
+        <p class="figleg">Figura 4 — Salário mediano estimado por senioridade (ponto médio de faixa, premissa P3).</p>
+      </td>
+      <td width="42%">
+        <p class="big">R$ 18.001</p>
+        <p class="biglegenda">mediana do nível Especialista/Staff+ — e também do perfil <b>ML/AI Engineer</b>, o mais bem pago do mercado</p>
+        <ul>
+          <li>Júnior R$ 3.501 · Pleno R$ 7.001 · Sênior R$ 14.001.</li>
+          <li>Maiores prêmios em engenharia e ciência aplicada — quem constrói plataforma e produtos de IA.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Banda salarial única para “profissional de dados” é erro de orçamento: calibrar por família de cargo.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · mediana do ponto médio de faixa salarial</div>
+</div>
+
+<!-- ============ 9 · Q3 DIVERSIDADE ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 3 — Diversidade de gênero</p>
+  <h1 class="kicker">A barreira não é a entrada: é a promoção</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G07_gender_gap_by_seniority.png" width="600" alt="Salário mediano por gênero controlado por senioridade">
+        <p class="figleg">Figura 5 — Salário mediano por gênero, controlado por senioridade (2025/26).</p>
+      </td>
+      <td width="42%">
+        <p class="big">−28,6%</p>
+        <p class="biglegenda">diferença na mediana do nível Sênior — R$ 4.000 por mês</p>
+        <ul>
+          <li><b>Júnior e Pleno: medianas iguais.</b> O gap surge no Sênior e persiste no topo (−22,2%).</li>
+          <li>Participação feminina estagnada: 18,5% (2019) → pico de 24,8% (2022) → <b>22,0%</b> (2025/26).</li>
+          <li>Liderança: 19,1% das mulheres em posição de gestão, contra 23,6% dos homens.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Política de D&amp;I focada só em contratação não resolve. A alavanca está em promoção e retenção.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · comparação controlada por senioridade</div>
+</div>
+
+<!-- ============ 10 · Q4 TECNOLOGIAS ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 4 — Tecnologias com maior adoção</p>
+  <h1 class="kicker">Python e SQL são alfabetização; AWS lidera a nuvem</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G08_languages_series.png" width="600" alt="Adoção de linguagens de 2019 a 2025/26">
+        <p class="figleg">Figura 6 — Adoção de linguagens no trabalho, série 2019–2025/26 (múltipla escolha).</p>
+      </td>
+      <td width="42%">
+        <p class="big">92,0%</p>
+        <p class="biglegenda">de adoção de Python em 2025/26 — eram 44,4% em 2019 (+47,6 p.p.; crescimento de 2,1×)</p>
+        <ul>
+          <li><b>SQL em 84,2%:</b> o par Python + SQL é pré-requisito, não diferencial.</li>
+          <li><b>AWS lidera a nuvem com 48,3%</b>, à frente de Azure e GCP.</li>
+          <li>Power BI domina o consumo analítico corporativo.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Padronizar no que o mercado já domina reduz custo e prazo de contratação e de treinamento.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edições 2019–2025/26 · base de respondentes válidos por questão</div>
+</div>
+
+<!-- ============ 11 · Q5 IA ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 5 — Adoção de IA e impacto</p>
+  <h1 class="kicker">IA deixou de ser iniciativa pessoal: 6,4% → 42,4% em dois anos</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G12_genai_usage.png" width="600" alt="Uso individual de IA generativa no trabalho">
+        <p class="figleg">Figura 7 — Uso individual de IA generativa no trabalho, 2023 a 2025/26.</p>
+      </td>
+      <td width="42%">
+        <p class="big">60,6%</p>
+        <p class="biglegenda">dos gestores já tratam IA generativa como prioridade máxima ou entre as principais (eram 36,2% em 2023)</p>
+        <ul>
+          <li><b>“Não é prioridade” desabou</b> de 28,8% para 11,3%.</li>
+          <li>Quem não usa GenAI caiu de 19,7% para <b>2,1%</b>.</li>
+          <li>“Empresa paga a ferramenta”: +36,0 p.p. em dois anos (6,6×) — o uso saiu do gratuito e não governado.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Para banco regulado, fornecer ferramenta oficial é ganho de produtividade <b>e</b> mitigação de vazamento (shadow AI).</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edições 2023–2025/26 · base de respondentes válidos por questão</div>
+</div>
+
+<!-- ============ 12 · Q6 REGIÕES E TRABALHO ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 6 — Regiões, senioridade e modelos de trabalho</p>
+  <h1 class="kicker">Talento está fora do eixo — e não quer voltar ao presencial</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G14_work_model.png" width="600" alt="Modelo de trabalho praticado versus desejado">
+        <p class="figleg">Figura 8 — Modelo de trabalho praticado versus desejado (2025/26).</p>
+      </td>
+      <td width="42%">
+        <p class="big">1,9%</p>
+        <p class="biglegenda">é a fatia de profissionais que deseja trabalhar 100% presencial</p>
+        <ul>
+          <li>O Sudeste concentra <b>64,4%</b> dos profissionais e as medianas regionais são equivalentes (R$ 10.001): contratar fora do eixo <b>amplia o funil</b> sem alterar a banda salarial.</li>
+          <li>O descompasso entre modelo praticado e desejado é o principal risco de atração e retenção.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Presença rígida funciona como imposto sobre a folha: encarece a contratação e acelera a saída.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · respondentes com vínculo ativo</div>
+</div>
+
+<!-- ============ 13 · Q7 OPORTUNIDADES ============ -->
+<div class="slide">
+  <p class="eyebrow">Pergunta 7 — Oportunidades e desafios</p>
+  <h1 class="kicker">A janela de vantagem em IA se fecha; dados confiáveis decidem</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="58%">
+        <img class="graf" src="G15_job_criteria.png" width="600" alt="Critérios decisivos na escolha de onde trabalhar">
+        <p class="figleg">Figura 9 — Critérios decisivos na escolha de onde trabalhar (2025/26).</p>
+      </td>
+      <td width="42%">
+        <ul>
+          <li><b>EVP vence salário isolado:</b> remuneração lidera, mas flexibilidade, ambiente e crescimento formam o pelotão decisivo.</li>
+          <li><b>A dor de quem já lidera times</b> não é contratar: lideram dividir tempo entre técnica e gestão (36,3%) e gerenciar a expectativa das áreas (33,3%); qualidade dos dados aparece com 21,6%.</li>
+          <li>Com a adoção de IA rumo à paridade, o diferencial migra para <b>quem captura valor primeiro</b>.</li>
+        </ul>
+        <div class="sowhat">
+          <b>Implicação para o cliente</b>
+          <span>Investir em IA sem base de dados confiável antecipa o custo e adia o retorno — e a governança do dado é pré-requisito, não consequência.</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Fonte: State of Data Brasil — Data Hackers/Bain (Kaggle) · Edição 2025/26 · base de respondentes válidos por questão</div>
+</div>
+
+<!-- ============ 14 · RECOMENDAÇÕES ============ -->
+<div class="slide">
+  <p class="eyebrow">Recomendações estratégicas</p>
+  <h1 class="kicker">Três frentes, oito ações, prioridade declarada</h1>
+  <table class="dados">
+    <tr><th width="33%">Ação</th><th width="11%" class="c">Prioridade</th><th width="15%" class="c">Horizonte</th><th>Evidência-âncora</th></tr>
+    <tr><td>Política de uso e licenciamento corporativo de GenAI</td><td class="alta c">Alta</td><td class="c">0–90 dias</td><td>42,4% já têm GenAI paga pela empresa</td></tr>
+    <tr><td>Trilha obrigatória Python + SQL</td><td class="alta c">Alta</td><td class="c">0–90 dias</td><td>92,0% e 84,2% de adoção no mercado</td></tr>
+    <tr><td>Bandas salariais por família de cargo</td><td class="alta c">Alta</td><td class="c">0–90 dias</td><td>De R$ 3.501 (Jr) a R$ 18.001 (Esp.)</td></tr>
+    <tr><td>Plataforma Medallion com catálogo e qualidade</td><td class="alta c">Alta</td><td class="c">3–12 meses</td><td>Qualidade dos dados: 21,6% dos gestores</td></tr>
+    <tr><td>Metas de diversidade na promoção a Sênior+</td><td class="alta c">Alta</td><td class="c">3–12 meses</td><td>Gap de −28,6% concentrado no Sênior</td></tr>
+    <tr><td>Contratação remota nacional</td><td class="media c">Média</td><td class="c">6–18 meses</td><td>Sudeste concentra 64,4%; ampliar o funil</td></tr>
+    <tr><td>Programa de formação de base (Júnior → Pleno)</td><td class="media c">Média</td><td class="c">6–18 meses</td><td>Escassez relativa de sêniores</td></tr>
+    <tr><td>EVP com flexibilidade formalizada</td><td class="media c">Média</td><td class="c">6–18 meses</td><td>Apenas 1,9% desejam presencial integral</td></tr>
+  </table>
+  <div class="rodape">Cada ação é rastreável a um indicador apresentado nos slides 7 a 13 · Fonte: State of Data Brasil (Data Hackers/Bain)</div>
+</div>
+
+<!-- ============ 15 · RISCOS E LIMITAÇÕES ============ -->
+<div class="slide">
+  <p class="eyebrow">Riscos e limitações</p>
+  <h1 class="kicker">O que os dados não dizem — e como tratamos isso</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="56%">
+        <table class="dados">
+          <tr><th width="43%">Risco</th><th>Mitigação aplicada</th></tr>
+          <tr><td>Quebra de schema entre edições</td><td>De-para versionado + asserções automáticas</td></tr>
+          <tr><td>Mudança de categorias do questionário</td><td>Harmonização documentada; quebras declaradas</td></tr>
+          <tr><td>Queda de volumetria em 2025/26</td><td>Apenas proporções; n declarado em todo gráfico</td></tr>
+          <tr><td>Denominador de múltipla escolha</td><td>Base = respondentes válidos da questão</td></tr>
+          <tr><td>Estimativa salarial por ponto médio</td><td>Regra única e auditável (premissa P3)</td></tr>
+        </table>
+      </td>
+      <td width="44%">
+        <ul>
+          <li><b>Seis leituras intuitivas foram testadas contra os dados; quatro foram refutadas e reescritas</b> — o registro completo está na Seção 13.4 do relatório técnico.</li>
+          <li>Exemplo: o prêmio salarial por cargo foi <b>revalidado com controle de senioridade</b>, e a suposta vantagem da Engenharia sobre a Ciência de Dados mostrou-se efeito de composição.</li>
+          <li><b>Amostra por conveniência</b>, sem pesos: descreve os respondentes, não o universo do país.</li>
+          <li><b>Viés de seleção e de autorresposta:</b> comunidade online engajada tende a superestimar a adoção de tecnologias novas.</li>
+          <li><b>Sem inferência causal:</b> análise descritiva por decisão metodológica — testes inferenciais não teriam validade nesta amostra.</li>
+          <li>Tendências direcionais são mais confiáveis que níveis absolutos.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Transparência metodológica completa nos anexos técnicos e no relatório técnico do projeto</div>
+</div>
+
+<!-- ============ 16 · PRÓXIMOS PASSOS ============ -->
+<div class="slide">
+  <p class="eyebrow">Próximos passos</p>
+  <h1 class="kicker">90 dias: política de IA, trilha técnica e bandas salariais</h1>
+  <table class="dados">
+    <tr><th width="42%">Quick win (0–90 dias)</th><th width="25%">Entregável</th><th>Resultado esperado</th></tr>
+    <tr><td>Publicar política de uso de IA generativa</td><td>Normativo interno</td><td>Elimina shadow AI e risco de vazamento</td></tr>
+    <tr><td>Disponibilizar ferramenta oficial licenciada</td><td>Contrato + rollout</td><td>Produtividade com trilha de auditoria</td></tr>
+    <tr><td>Lançar trilha Python + SQL</td><td>Programa de capacitação</td><td>Nivelamento técnico do time atual</td></tr>
+    <tr><td>Revisar bandas salariais por família de cargo</td><td>Tabela de remuneração</td><td>Competitividade na contratação</td></tr>
+  </table>
+  <div class="sowhat" style="margin-top:14pt;">
+    <b>Depois dos 90 dias</b>
+    <span>Plataforma Medallion com catálogo e qualidade (3–12 meses) · metas de diversidade na promoção (3–12 meses) · programa de formação de base e EVP formalizado (6–18 meses).</span>
+  </div>
+  <div class="rodape">Roadmap derivado da matriz de priorização do slide 14</div>
+</div>
+
+<!-- ============ 17 · ANEXOS ============ -->
+<div class="slide">
+  <p class="eyebrow">Anexos e referências</p>
+  <h1 class="kicker">Rastreabilidade completa da evidência ao código</h1>
+  <table class="layout">
+    <tr>
+      <td class="esq" width="50%">
+        <p><b>Anexos técnicos</b></p>
+        <ul>
+          <li><b>A1</b> — EDA e qualidade dos dados (preenchimento e nulos estruturais)</li>
+          <li><b>A2</b> — Métricas do pipeline (22.686 linhas, zero descartes)</li>
+          <li><b>A3</b> — Premissas versionadas P1–P8 e de-para de colunas</li>
+          <li><b>A4</b> — Gráficos complementares (senioridade, salário por cargo, participação feminina, clouds, BI, regiões, prioridade de IA)</li>
+          <li><b>A5</b> — Evidências de execução na AWS (E01–E08)</li>
+          <li><b>A6</b> — Notebooks 01–05, Glue Jobs e diagrama Draw.io</li>
+        </ul>
+      </td>
+      <td width="50%">
+        <p><b>Referências</b></p>
+        <ul style="font-size:9.5pt;">
+          <li>DATA HACKERS; BAIN &amp; COMPANY. <i>State of Data Brazil</i>: edições 2019–2025/26. Kaggle.</li>
+          <li>BAIN &amp; COMPANY. <i>Pesquisa de adoção de IA generativa no Brasil</i>, 2025.</li>
+          <li>MCKINSEY &amp; COMPANY. <i>The State of AI</i>, 2025.</li>
+          <li>DATABRICKS. <i>Medallion Lakehouse Architecture</i>.</li>
+          <li>AWS BUILDERS. <i>Medallion Architecture on AWS</i>.</li>
+          <li>BRASSCOM. <i>Censo de Diversidade do Setor de TIC</i>, 2024–2025.</li>
+        </ul>
+        <p class="nota">Fontes externas usadas apenas como benchmark; todos os números deste material saem do pipeline sobre os dados oficiais da pesquisa.</p>
+      </td>
+    </tr>
+  </table>
+  <div class="rodape">Repositório do projeto: github.com/lgmricardo/Techchallenge3-G12 · Evidências de execução na AWS: pasta evidence/</div>
+</div>
+
+<!-- ============ ROTEIRO DE APRESENTAÇÃO ============ -->
+<div class="roteiro">
+  <h2>Roteiro de apresentação — 30 a 45 segundos por slide</h2>
+  <p><b>1 · Capa.</b> Somos a consultoria de dados contratada. Em oito minutos mostramos o que 22.686 profissionais revelam sobre como o banco deve contratar, capacitar e investir em IA.</p>
+  <p><b>2 · Agenda e síntese.</b> Se o comitê só puder ver um slide, é este: seis evidências, seis decisões. O restante é a sustentação.</p>
+  <p><b>3 · Contexto.</b> O cliente já decidiu expandir. O risco não está na decisão — está em executá-la sem retrato do mercado.</p>
+  <p><b>4 · Pergunta norteadora.</b> Uma pergunta central e sete desdobramentos exigidos. Cada um tem um slide dedicado.</p>
+  <p><b>5 · Metodologia.</b> Seis edições, 22.686 respostas. Nada foi descartado e toda comparação ocorre após harmonização de esquemas.</p>
+  <p><b>6 · Arquitetura.</b> Bronze imutável, Silver harmonizada, Gold agregada, catálogo e consulta SQL. Segurança desde o primeiro dia. Este desenho é também a plataforma que recomendamos.</p>
+  <p><b>7 · Mercado.</b> Quatro famílias concentram dois terços do mercado. O topo é escasso — e é onde a disputa dói.</p>
+  <p><b>8 · Remuneração.</b> Cada degrau quase dobra o salário. Banda única é erro de orçamento.</p>
+  <p><b>9 · Diversidade.</b> O dado que muda a conversa: Júnior e Pleno têm medianas iguais. O gap nasce na promoção.</p>
+  <p><b>10 · Tecnologias.</b> Python e SQL são alfabetização. AWS lidera — e é onde está o talento disponível.</p>
+  <p><b>11 · IA.</b> Em dois anos, a IA saiu do bolso do funcionário para o orçamento da empresa. Quem não governa isso já convive com shadow AI.</p>
+  <p><b>12 · Trabalho.</b> Menos de 2% querem presencial integral. Política rígida encarece a folha.</p>
+  <p><b>13 · Oportunidades.</b> O gargalo dos gestores não é contratar: é confiabilidade de dados. Sem isso, IA não entrega retorno.</p>
+  <p><b>14 · Recomendações.</b> Oito ações, cada uma amarrada a um número já mostrado, com prioridade e horizonte declarados.</p>
+  <p><b>15 · Riscos.</b> Dizemos também o que os dados não permitem afirmar: amostra por conveniência, sem causalidade.</p>
+  <p><b>16 · Próximos passos.</b> Quatro quick wins em 90 dias, todos de baixo custo e alto sinal.</p>
+  <p><b>17 · Anexos.</b> Todo número tem código, premissa e evidência por trás. Perguntas?</p>
+</div>
+
+</body>
+</html>

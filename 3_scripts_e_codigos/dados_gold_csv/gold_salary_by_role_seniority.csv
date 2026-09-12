@@ -1,0 +1,38 @@
+ano,cargo_grupo,total_grupo,pct_senior_mais,n_senior,salario_mediano_pm_senior
+2023,ML/AI Engineer,75,38.7,29,18001.0
+2023,Estatística/Economia,26,26.9,7,18001.0
+2023,Eng. de Software,105,48.6,51,14001.0
+2023,Analytics Engineer,139,49.6,69,14001.0
+2023,Ciência de Dados,687,39.6,272,14001.0
+2023,Engenharia/Arquitetura de Dados,684,47.5,325,14001.0
+2023,Professor/Pesquisador,28,46.4,13,14001.0
+2023,Produto (DPM/PM),81,67.9,55,14001.0
+2023,Análise de Negócios,195,42.6,83,10001.0
+2023,Outros,404,25.2,102,10001.0
+2023,DBA,20,65.0,13,10001.0
+2023,Business Intelligence,506,25.7,130,10001.0
+2023,Análise de Dados,907,29.8,270,10001.0
+2024,ML/AI Engineer,103,56.3,58,18001.0
+2024,Analytics Engineer,228,50.4,115,14001.0
+2024,Produto (DPM/PM),80,76.3,61,14001.0
+2024,Engenharia/Arquitetura de Dados,661,52.5,347,14001.0
+2024,Ciência de Dados,687,49.3,339,14001.0
+2024,Business Intelligence,396,25.8,102,10001.0
+2024,Eng. de Software,122,36.1,44,10001.0
+2024,Estatística/Economia,17,29.4,5,10001.0
+2024,Outros,362,24.3,88,10001.0
+2024,Análise de Dados,957,33.6,322,10001.0
+2024,Professor/Pesquisador,21,42.9,9,10001.0
+2024,Análise de Negócios,184,45.1,83,10001.0
+2025,Estatística/Economia,9,22.2,1,18001.0
+2025,ML/AI Engineer,106,65.1,42,18001.0
+2025,Produto (DPM/PM),33,87.9,19,14001.0
+2025,Engenharia/Arquitetura de Dados,430,62.1,192,14001.0
+2025,Eng. de Software,106,51.9,41,14001.0
+2025,Ciência de Dados,424,51.7,147,14001.0
+2025,Analytics Engineer,135,61.5,59,14001.0
+2025,Business Intelligence,215,35.3,59,10001.0
+2025,Análise de Negócios,141,46.8,48,10001.0
+2025,Análise de Dados,599,40.6,184,10001.0
+2025,Outros,287,31.0,60,10001.0
+2025,Professor/Pesquisador,16,56.3,6,6001.0

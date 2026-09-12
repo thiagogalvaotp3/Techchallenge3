@@ -1,0 +1,16 @@
+ano,modalidade,usuarios,base_valida,pct
+2023,Empresa paga,240,3772,6.4
+2024,Empresa paga,697,3619,19.3
+2025,Empresa paga,892,2106,42.4
+2023,Não usa GenAI,744,3772,19.7
+2024,Não usa GenAI,237,3619,6.5
+2025,Não usa GenAI,44,2106,2.1
+2023,Paga do próprio bolso,261,3772,6.9
+2024,Paga do próprio bolso,562,3619,15.5
+2025,Paga do próprio bolso,567,2106,26.9
+2023,Usa Copilot,444,3772,11.8
+2024,Usa Copilot,858,3619,23.7
+2025,Usa Copilot,628,2106,29.8
+2023,Usa soluções gratuitas,2401,3772,63.7
+2024,Usa soluções gratuitas,1944,3619,53.7
+2025,Usa soluções gratuitas,643,2106,30.5
