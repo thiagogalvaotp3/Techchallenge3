@@ -1,10 +1,6 @@
 # Tech Challenge — Fase 3 · State of Data Brasil
 **POSTECH DTAT · Grupo: Efraim Oliveira · Érica Tarsis · Ricardo Moraes · Rodrigo Bernardino · Thiago Galvão**
 
-Repositório completo (código-fonte, histórico e evidências): https://github.com/lgmricardo/Techchallenge3-G12
-
-Esta pasta segue exatamente as 3 entregas descritas no enunciado ("Expectativas de Entrega"):
-
 ## 1. Material executivo com DataViz e Storytelling → `1_material_executivo/`
 `executive_deck.pptx` — indicadores, análises, insights e recomendações, com narrativa sobre
 perfil profissional, tendências de mercado, tecnologias, remuneração, senioridade, modelos de
